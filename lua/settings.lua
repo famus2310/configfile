@@ -1,4 +1,4 @@
-vim.o.hls = false
+-- vim.o.hls = false
 vim.o.errorbells = false
 vim.o.syntax = 'on'
 --vim.o.hidden = true --disable this so terminal buffer is closed

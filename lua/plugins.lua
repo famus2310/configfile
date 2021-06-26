@@ -89,5 +89,7 @@ return require('packer').startup(function(use)
 		branch = 'lua',
   })
 
+  use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
+
 end)
 

@@ -19,7 +19,6 @@ vim.api.nvim_set_keymap('x', 'J', ':move \'>+1<CR>gv-gv', {noremap = true, silen
 
 vim.api.nvim_set_keymap('t', '<leader>tq', "<C-\\><C-n>:lua require('lspsaga.floaterm').close_float_terminal()<CR>", {noremap = true, silent = true}) -- leader+tq: quit terminal
 
-vim.api.nvim_set_keymap('t', '<ESC>', "<C-\\><C-n>", {noremap = true, silent = true}) -- leader+tq: quit terminal
-
 -- Nvim-tree
 vim.api.nvim_set_keymap('n', '<F3>', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+

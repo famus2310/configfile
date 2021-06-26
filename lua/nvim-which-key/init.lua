@@ -43,7 +43,11 @@ wk.setup{
     show_help = true -- show help message on the command line when the popup is visible
 }
 
+-- No Highlighting
+vim.api.nvim_set_keymap('n', '<Leader>n', ':set hlsearch!<CR>', {noremap = true, silent = true})
+
 wk.register({
+  ["n"] = "No Highlight",
    s = {
     name = "+Search",
     b = {"<cmd>Telescope git_branches<cr>", "Checkout branch"},
