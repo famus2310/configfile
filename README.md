@@ -16,3 +16,6 @@ init.lua and lua/ folders for neovim >= 0.5
 
 - Use TokyoNight Terminal Colorscheme [Check Out Here!](https://windowsterminalthemes.dev)
 - Use Tmux TokyoNight Theme [Check Out Here!](https://github.com/logico-dev/tokyo-night-tmux)
+
+## Optional
+- WIP
