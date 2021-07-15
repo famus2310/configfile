@@ -86,7 +86,6 @@ return require('packer').startup(function(use)
   --indent blankline
   use({
 		'lukas-reineke/indent-blankline.nvim',
-		branch = 'lua',
   })
 
   use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
