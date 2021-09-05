@@ -88,7 +88,15 @@ return require('packer').startup(function(use)
 		'lukas-reineke/indent-blankline.nvim',
   })
 
-  use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
+	--markdown previwewr
+  --use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
+
+	--git tools
+	--use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
+	use {
+		'lewis6991/gitsigns.nvim',
+		requires = {'nvim-lua/plenary.nvim'}
+	}
 
 end)
 

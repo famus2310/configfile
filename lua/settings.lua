@@ -4,7 +4,7 @@ vim.o.syntax = 'on'
 --vim.o.hidden = true --disable this so terminal buffer is closed
 vim.o.fileencoding = "utf-8" -- The encoding written to file
 --vim.o.mouse = "a" -- Enable your mouse
-vim.o.expandtab = false
+--vim.bo.expandtab = false
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.wo.number = true
@@ -37,4 +37,5 @@ endif
 vim.cmd[[autocmd FileType cpp nmap <F5> i/*<CR><Tab>Filename: <C-R>=expand('%:p:h:t')<CR>/<C-R>=expand('%:t')<CR><CR>Timestamp: <C-R>=strftime("%d-%m-%Y %H:%M:%S")<CR><CR>Author: Fadhil Musaad<CR><BS><BS>*/<ESC>:r ~/CP/template/template.cpp<CR>]]
 vim.cmd[[autocmd FileType go nmap <F5> i/*<CR>* Filename: <C-R>=expand('%:p:h:t')<CR>/<C-R>=expand('%:t')<CR><CR>* Timestamp: <C-R>=strftime("%d-%m-%Y %H:%M:%S")<CR><CR>* Author: Fadhil Musaad<CR>*/<CR><ESC>:r ~/CP/template/template.go<CR>]]
 vim.cmd[[autocmd FileType go nmap <F6> i/*<CR>* Filename: <C-R>=expand('%:p:h:t')<CR>/<C-R>=expand('%:t')<CR><CR>* Timestamp: <C-R>=strftime("%d-%m-%Y %H:%M:%S")<CR><CR>* Author: Fadhil Musaad<CR>*/<CR><ESC>:r ~/CP/template/template_test.go<CR>]]
+vim.cmd[[autocmd filetype python setlocal noet shiftwidth=2 softtabstop=2 smartindent tabstop=2]]
 --vim.cmd[[hi Normal guibg=NONE ctermbg=NONE]] --make transparent bg

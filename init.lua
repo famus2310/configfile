@@ -17,3 +17,5 @@ require('colorscheme') -- should add after nvim-tree
 require('nvim-lsprooter')
 require('nvim-toggleterm')
 require('nvim-blankline')
+--require('nvim-neogit')
+require('nvim-gitsigns')
