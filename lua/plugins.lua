@@ -98,5 +98,11 @@ return require('packer').startup(function(use)
 		requires = {'nvim-lua/plenary.nvim'}
 	}
 
+	-- golang dev
+  --use {'ray-x/go.nvim'}
+  use {'fatih/vim-go'}
+	
+	
+
 end)
 
